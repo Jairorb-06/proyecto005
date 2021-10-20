@@ -6,5 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'proyecto005';
+  mensaje='';
+
+  actualizar(t: number){
+    this.mensaje =t + '(Se actualiza cada 10 segundos)';
+  }
 }
